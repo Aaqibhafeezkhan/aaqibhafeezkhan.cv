@@ -35,16 +35,11 @@
     .skills{display:grid;grid-template-columns:170px 1fr;gap:9px 18px;font-size:14px}
     .skill-name{font-weight:700}
     .skill-value{color:#303b47}
-    .project{padding:14px 0;border-bottom:1px solid #edf0f2}
-    .project:last-child{border-bottom:0}
-    .project h3{margin:0 0 4px;font-size:16px}
-    .project p{margin:0;font-size:14px;color:#3f4a55}
-    .tags{margin-top:7px;font-size:12px;color:var(--muted)}
     .edu{display:flex;justify-content:space-between;gap:20px}
     footer{border-top:1px solid var(--line);padding:20px 52px;color:var(--muted);font-size:12px;text-align:center}
     .print{position:fixed;right:24px;bottom:24px;border:0;border-radius:999px;padding:11px 16px;background:var(--ink);color:#fff;font-weight:700;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,.18)}
     @media(max-width:700px){.page{margin:0;box-shadow:none}.page header,nav,main,footer{padding-left:22px;padding-right:22px}.role-head,.edu{display:block}.dates{margin-top:4px}.skills{grid-template-columns:1fr;gap:2px}.skill-name{margin-top:8px}.contact span:not(:last-child)::after{display:none}.contact{gap:5px 12px}}
-    @media print{body{background:#fff}.page{max-width:none;margin:0;box-shadow:none}nav,.print{display:none}header{padding-top:0}a{color:inherit;text-decoration:none}section{break-inside:auto}.role,.project{break-inside:avoid}}
+    @media print{body{background:#fff}.page{max-width:none;margin:0;box-shadow:none}nav,.print{display:none}header{padding-top:0}a{color:inherit;text-decoration:none}section{break-inside:auto}.role{break-inside:avoid}}
   </style>
 </head>
 <body>
@@ -65,7 +60,6 @@
       <a href="#summary">Summary</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Selected Engineering Work</a>
       <a href="#education">Education</a>
     </nav>
 
@@ -135,25 +129,6 @@
           <div class="skill-name">Operating Systems</div><div class="skill-value">Windows, Ubuntu/Linux</div>
           <div class="skill-name">Engineering Practices</div><div class="skill-value">Agile, RESTful design, API development, microservices, code review, troubleshooting, documentation, CI/CD</div>
         </div>
-      </section>
-
-      <section id="projects">
-        <h2>Selected Engineering Work</h2>
-        <article class="project">
-          <h3>Enterprise Remediation &amp; AIOps Platform</h3>
-          <p>Contributed to a full-stack intelligent incident-resolution platform combining a React operator console, Angular administration surface, FastAPI control plane, Python/CrewAI worker, AI-assisted triage and diagnosis, ServiceNow integration, human-in-the-loop approvals, remediation utilities and observability.</p>
-          <div class="tags">React 19 · TypeScript · Angular 18 · FastAPI · Python · CrewAI · ServiceNow · Auth0 · Azure AI Foundry · Azure OpenAI · WebSockets · Azure APIM</div>
-        </article>
-        <article class="project">
-          <h3>Application Management Suite</h3>
-          <p>Worked within an enterprise application-management platform covering utility onboarding and execution, ServiceNow incident tracking, AI-powered ticket analysis, health monitoring, audit logging, dashboards, authentication and microservice integrations.</p>
-          <div class="tags">Angular · TypeScript · Spring Boot · Java · MySQL · Docker · Auth0 · Gemini · Azure OpenAI · REST APIs</div>
-        </article>
-        <article class="project">
-          <h3>Developer &amp; Open Source Engineering</h3>
-          <p>Builds and maintains practical software projects covering full-stack applications, Spring Boot services, React applications, developer infrastructure, distributed systems, observability, API security and automation. GitHub activity includes independent engineering projects and open-source contributions.</p>
-          <div class="tags">React · Java · Spring Boot · TypeScript · Node.js · AWS · Microservices · GraphQL · GitHub</div>
-        </article>
       </section>
 
       <section id="education">
